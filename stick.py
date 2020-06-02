@@ -18,15 +18,15 @@ get_traffic_sources_values = r.html.find('.trafficSourcesChart-value')
 
 engagement_values = []
 
-for i in range(len(get_engagement_values)):
-    engagement_values.append(get_engagement_values[i].text)
+for get_engagement_value in get_engagement_values:
+    engagement_values.append(get_engagement_value.text)
 
 engagement = dict(zip(engagement_names, engagement_values))
 
 traffic_sources_values = []
 
-for i in range(len(get_traffic_sources_values)):
-    traffic_sources_values.append(get_traffic_sources_values[i].text)
+for get_traffic_sources_value in get_traffic_sources_values:
+    traffic_sources_values.append(get_traffic_sources_value.text)
 
 traffic_sources = dict(zip(traffic_sources_names, traffic_sources_values))
 
