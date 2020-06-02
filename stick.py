@@ -11,7 +11,7 @@ except requests.exceptions.RequestException as e:
 
 get_engagement_values = r.html.find('.engagementInfo-valueNumber')
 
-engagement_names = {'Total Visits': '', 'Bounce Rate': '', 'Avg. Visit Duration': '', 'Pages per Visit': ''}
+engagement_names = {'Total Visits': '', 'Avg. Visit Duration': '', 'Pages per Visit': '', 'Bounce Rate': ''}
 
 engagement_values = []
 
